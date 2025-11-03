@@ -3,7 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devroz - Coming Soon</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Devroz - Developing Transformative Technology | Coming Soon</title>
+    <meta name="description" content="Devroz is developing transformative technology solutions. Stay tuned for our upcoming launch. Innovation meets excellence.">
+    <meta name="keywords" content="Devroz, technology, innovation, software development, transformative technology, tech startup">
+    <meta name="author" content="Devroz">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://devroz.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devroz.com/">
+    <meta property="og:title" content="Devroz - Developing Transformative Technology">
+    <meta property="og:description" content="Devroz is developing transformative technology solutions. Stay tuned for our upcoming launch.">
+    <meta property="og:image" content="https://devroz.com/devroz_logo.svg">
+    <meta property="og:site_name" content="Devroz">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://devroz.com/">
+    <meta name="twitter:title" content="Devroz - Developing Transformative Technology">
+    <meta name="twitter:description" content="Devroz is developing transformative technology solutions. Stay tuned for our upcoming launch.">
+    <meta name="twitter:image" content="https://devroz.com/devroz_logo.svg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="devroz_logo.svg">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Devroz",
+      "url": "https://devroz.com",
+      "logo": "https://devroz.com/devroz_logo.svg",
+      "description": "Developing transformative technology solutions",
+      "sameAs": []
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -23,7 +65,6 @@
             position: relative;
         }
 
-        /* Animated background particles */
         .bg-animation {
             position: absolute;
             width: 100%;
@@ -71,6 +112,71 @@
             animation-delay: 6s;
         }
 
+        .hint-icon {
+            position: absolute;
+            font-size: 32px;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 0;
+            animation: floatHint 6s infinite ease-in-out;
+            filter: blur(0.5px);
+        }
+
+        .hint-icon:nth-child(5) {
+            left: 15%;
+            top: 15%;
+            animation-delay: 0s;
+        }
+
+        .hint-icon:nth-child(6) {
+            right: 20%;
+            top: 25%;
+            animation-delay: 1.5s;
+        }
+
+        .hint-icon:nth-child(7) {
+            left: 25%;
+            bottom: 25%;
+            animation-delay: 3s;
+        }
+
+        .hint-icon:nth-child(8) {
+            right: 15%;
+            bottom: 35%;
+            animation-delay: 4.5s;
+        }
+
+        .hint-icon:nth-child(9) {
+            left: 45%;
+            top: 10%;
+            animation-delay: 2s;
+        }
+
+        .hint-icon:nth-child(10) {
+            right: 40%;
+            bottom: 15%;
+            animation-delay: 3.5s;
+        }
+
+        @keyframes floatHint {
+            0%, 100% {
+                opacity: 0;
+                transform: translateY(0) scale(0.5) rotate(0deg);
+            }
+            20% {
+                opacity: 0.4;
+                transform: translateY(-20px) scale(1) rotate(10deg);
+            }
+            50% {
+                opacity: 0.5;
+                transform: translateY(-40px) scale(1.1) rotate(-5deg);
+            }
+            80% {
+                opacity: 0.3;
+                transform: translateY(-20px) scale(0.9) rotate(5deg);
+            }
+        }
+
         @keyframes float {
             0%, 100% {
                 transform: translateY(0) translateX(0);
@@ -89,7 +195,6 @@
             max-width: 800px;
         }
 
-        /* Logo placeholder */
         .logo-container {
             width: 180px;
             height: 180px;
@@ -214,6 +319,10 @@
                 width: 140px;
                 height: 140px;
             }
+
+            .hint-icon {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -223,11 +332,18 @@
         <div class="particle"></div>
         <div class="particle"></div>
         <div class="particle"></div>
+        
+        <div class="hint-icon" style="color: rgba(204, 0, 0, 0.3);">💰</div>
+        <div class="hint-icon" style="color: rgba(255, 204, 0, 0.3);">📱</div>
+        <div class="hint-icon" style="color: rgba(94, 231, 223, 0.3);">📊</div>
+        <div class="hint-icon" style="color: rgba(204, 0, 0, 0.3);">💳</div>
+        <div class="hint-icon" style="color: rgba(255, 204, 0, 0.3);">🌟</div>
+        <div class="hint-icon" style="color: rgba(94, 231, 223, 0.3);">💵</div>
     </div>
 
-    <div class="container">
+    <main class="container">
         <div class="logo-container">
-          <img src="devroz_logo.svg" alt="Devroz Logo" style="width: 80%; height: 80%; object-fit: contain;">
+          <img src="devroz_logo.svg" alt="Devroz Logo - Transformative Technology Company" style="width: 80%; height: 80%; object-fit: contain;">
         </div>
         
         <h1>Devroz</h1>
@@ -239,6 +355,6 @@
         </div>
         
         <p class="subtitle">We're crafting something exceptional for you</p>
-    </div>
+    </main>
 </body>
 </html>
