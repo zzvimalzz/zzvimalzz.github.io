@@ -11,4 +11,11 @@
         <priority>1.0</priority>
     </url>
     
+    <url>
+        <loc>https://devroz.com/privacy_policy</loc>
+        <lastmod>2025-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
 </urlset>
